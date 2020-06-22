@@ -10,8 +10,7 @@ Create a simple stocks application from the specification provided to:
         iii.  Record a trade, with timestamp, quantity, buy or sell indicator and price
         iv.   Calculate Volume Weighted Stock Price based on trades in past 5 minute
         
-    b.	Calculate the GBCE All Share Index using the geometric mean of the Volume Weighted Stock Price for all
-stocks
+    b.	Calculate the GBCE All Share Index using the geometric mean of the Volume Weighted Stock Price for all stocks
 
 Note: For point b. above an assumption was made that the same period of 5 minutes should dictate the inclusion of the trade.
 
@@ -23,7 +22,7 @@ Architecture:
 
 Design considerations:
  - Questioned whether to implement individual services for stock and trade?  Arguments as to whether they would be better suited as individual external microservices.  Justification for individual services would be driven by business requirements based on the criticality of each.  As this is not defined in the requirements the decision was taken to implement in a single microservice controller.
- - Security?  Again based on the lack of requirements there was no indication that security should be placed on the service endpoints.  Therefore this has been left open.  If required the standard spring security could be easily implemented or okta Oauth2 with minimal upheaval.
+ - Security?  Again based on the lack of requirements there was no indication that security should be placed on the service endpoints.  Therefore, this has been left open.  If required the standard spring security could be easily implemented or okta Oauth2 with minimal upheaval.
  - Date and time operations? There is no specification regarding cross timezone trade operations.  This would require further analysis and design with respect to recording and evaluating trades.
  - Minimal testing of out-the-box JPA layer.
  - Swagger to define the external interfaces? Not included however would definately be utilised in a commercial environment.
