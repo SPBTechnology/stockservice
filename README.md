@@ -27,13 +27,13 @@ Design considerations:
  - Minimal testing of out-the-box JPA layer.
  - Swagger to define the external interfaces? Not included however would definately be utilised in a commercial environment.
 
-### 3. Other considertaions:
+### 3. Other considertaions
 If commercial grade would expect to potentially include some or all of the following: 
 - Eureka service for service discovery.
 - An API-gateway should the service be exposed externally.
 - Hystrix for better exception handling / circuit breaking.
 
-### 3. Application
+### 4. Application
 #### Tests
 All tests run at time of commit.
 Differing test models implemented including pre-populating the H2 database and running service or controller tests through SpringRunner.  Also more localised testing through injecting mocks.
