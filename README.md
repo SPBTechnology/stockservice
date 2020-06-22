@@ -16,7 +16,7 @@ Note: For point b. above an assumption was made that the same period of 5 minute
 
 ### 2. Architecture and design considerations
 Architecture:
- - I choose to implement a simple RESTful java microservice based on Springboot framework.
+ - I chose to implement a simple RESTful java microservice based on Springboot framework.
  - Implementation was TDD specific.
  - Although the requirements stated that a persistence layer was not required I chose to implement an im-memory H2 datastore.  The data entities are therefore more in-line with the likely production solution and the in-memory db would likely be retained as the development equivalent.  Thus providing faster dev/test/prod cycles and ensuring consistency across all.
 
